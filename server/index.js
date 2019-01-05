@@ -13,7 +13,7 @@ mongoose.connect(config.DB_URI).then(() => {
 
 const app = express();
 
-app.use('api/v1/rentals', rentalsRoutes);
+app.use('/api/v1/rentals', rentalsRoutes);
 
 const PORT = process.env.PORT || 3001;
 
