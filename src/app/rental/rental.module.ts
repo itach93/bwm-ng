@@ -11,6 +11,7 @@ import { RentalComponent } from './rental.component';
 import { RentalService } from './shared/rental.service';
 import { RentailDetailComponent } from './rentail-detail/rentail-detail.component';
 import { UppercasePipe } from '../common/pipes/uppercase.pipe';
+import { MapModule } from '../common/map/map.module';
 
 const routes: Routes = [
     {   path: 'rentals',
@@ -34,7 +35,8 @@ const routes: Routes = [
         CommonModule,
         RouterModule.forChild(routes),
         HttpClientModule,
-        NgPipesModule
+        NgPipesModule,
+        MapModule
     ],
     providers: [RentalService]
 })
