@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
 import { RentalComponent } from './rental/rental.component';
 import { RentalModule } from './rental/rental.module';
-import { AuthComponent } from './auth/auth.component';
 import { AuthModule } from './auth/auth.module';
 
 const routes: Routes = [
@@ -17,8 +16,7 @@ const routes: Routes = [
 @NgModule({
    declarations: [
       AppComponent,
-      HeaderComponent,
-      AuthComponent
+      HeaderComponent
    ],
    imports: [
       BrowserModule,

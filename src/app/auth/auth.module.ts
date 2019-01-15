@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from './shared/auth.service';
 import { AuthGuard } from './shared/auth.guard';
 import { TokenInterceptor } from './shared/token.interceptor';
+import { AuthComponent } from './auth.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
 @NgModule({
    declarations: [
       LoginComponent,
-      RegisterComponent
+      RegisterComponent,
+      AuthComponent
    ],
    imports: [
       RouterModule.forChild(routes),
