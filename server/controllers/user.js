@@ -89,7 +89,7 @@ exports.authMiddleware = function(req, res, next) {
             }
         })
     } else {
-        return notAuthorized(err);
+        return notAuthorized(res);
     }
 }
 
